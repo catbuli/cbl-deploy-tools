@@ -8,9 +8,20 @@
 
 'use strict';
 
+const selectServer = require("./lib/selectServer");
+const handleConfig = require("./lib/handleConfig");
 
+/**
+ * @Description 主函数
+ * @param {*}
+ * @return {*}
+ * @example 
+ */
 async function start() {
-    console.log('asd', '');
+    let _SELECT = await selectServer(handleConfig());
+    if (!_SELECT) process.exit(1);
+
+
 }
 
 module.exports = start;

@@ -1,0 +1,10 @@
+[
+    {
+        "name":"本地服务器",
+        "build":"npm run build",
+        "ldist":"./ldist"
+    },
+    {
+        "name":"线上服务器"
+    }
+]
