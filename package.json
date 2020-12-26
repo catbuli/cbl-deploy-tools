@@ -1,0 +1,34 @@
+{
+  "name": "cbl-deploy-tools",
+  "version": "1.0.0",
+  "description": "前端自动化部署工具",
+  "main": "./index.js",
+  "bin": {
+    "cbl-dt": "./bin/cbl-deploy-tools.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV=production webpack --config build/wepack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catbuli/cbl-deploy.git"
+  },
+  "keywords": [
+    "auto",
+    "deploy",
+    "front-end"
+  ],
+  "author": "catbuli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catbuli/cbl-deploy-tools/issues"
+  },
+  "homepage": "https://github.com/catbuli/cbl-deploy-tools#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0"
+  }
+}
