@@ -1,10 +1,9 @@
 [
     {
         "name":"本地服务器",
+        "type":"local",
         "build":"npm run build",
-        "ldist":"./ldist"
-    },
-    {
-        "name":"线上服务器"
+        "localDist":"./dist",
+        "targetDist":"C:\\Users\\Administrator\\Desktop\\dist"
     }
 ]

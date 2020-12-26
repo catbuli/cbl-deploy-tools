@@ -10,6 +10,7 @@
 
 const selectServer = require("./lib/selectServer");
 const handleConfig = require("./lib/handleConfig");
+const projectBuild = require("./lib/projectBuild");
 
 /**
  * @Description 主函数
@@ -20,6 +21,10 @@ const handleConfig = require("./lib/handleConfig");
 async function start() {
     let _SELECT = await selectServer(handleConfig());
     if (!_SELECT) process.exit(1);
+
+    let [npm, ...script] = _SELECT.build.split(' ');
+
+    await projectBuild(npm, script);
 
 
 }
