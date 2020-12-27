@@ -2,8 +2,12 @@
     {
         "name":"本地服务器",
         "type":"local",
+        "host": "47.106.90.253",
+        "port":"22",
+        "username": "root",
+        "password": "zhangyifei0918..",
         "build":"npm run build",
         "localDist":"./dist",
-        "targetDist":"C:\\Users\\Administrator\\Desktop\\dist"
+        "targetDist":"/var/www/html/test"
     }
 ]

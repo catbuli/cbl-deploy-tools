@@ -11,6 +11,7 @@
 const selectServer = require("./lib/selectServer");
 const handleConfig = require("./lib/handleConfig");
 const projectBuild = require("./lib/projectBuild");
+const deploy = require("./lib/deploy");
 
 /**
  * @Description 主函数
@@ -19,14 +20,16 @@ const projectBuild = require("./lib/projectBuild");
  * @example 
  */
 async function start() {
-    let _SELECT = await selectServer(handleConfig());
-    if (!_SELECT) process.exit(1);
+    let _CONFIG = await selectServer(handleConfig());
+    if (!_CONFIG) process.exit(1);
 
-    let [npm, ...script] = _SELECT.build.split(' ');
+    let [command, ...script] = _CONFIG.build.split(' ');
 
-    await projectBuild(npm, script);
+    // await projectBuild(command, script);
 
+    await deploy(_CONFIG);
 
+    process.exit();
 }
 
 module.exports = start;
