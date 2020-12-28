@@ -11,7 +11,9 @@
 const selectServer = require("./lib/selectServer");
 const handleConfig = require("./lib/handleConfig");
 const projectBuild = require("./lib/projectBuild");
+const PACKAGE = require("./package.json");
 const deploy = require("./lib/deploy");
+const { msgSuccess, msgNormal, msgTitle, msgInfo } = require("./lib/consoleMsg");
 
 /**
  * @Description 主函数
@@ -23,11 +25,12 @@ async function start() {
 
     let _CONFIG = await selectServer(handleConfig());
 
-    let [command, ...script] = _CONFIG.build.split(' ');
-
-    await projectBuild(command, script);
+    await projectBuild(_CONFIG.build);
 
     await deploy(_CONFIG);
+
+    msgInfo(`${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`);
+    msgInfo("");
 
     process.exit();
 }
