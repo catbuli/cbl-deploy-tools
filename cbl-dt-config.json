@@ -1,6 +1,6 @@
 [
     {
-        "name":"本地服务器",
+        "name":"ciblog",
         "type":"local",
         "host": "47.106.90.253",
         "port":"22",
@@ -8,6 +8,7 @@
         "password": "zhangyifei0918..",
         "build":"npm run build",
         "localDist":"./dist",
-        "targetDist":"/var/www/html/test"
+        "targetDist":"/var/www/html/test",
+        "backup":true
     }
 ]

@@ -20,12 +20,12 @@ const deploy = require("./lib/deploy");
  * @example 
  */
 async function start() {
+
     let _CONFIG = await selectServer(handleConfig());
-    if (!_CONFIG) process.exit(1);
 
     let [command, ...script] = _CONFIG.build.split(' ');
 
-    // await projectBuild(command, script);
+    await projectBuild(command, script);
 
     await deploy(_CONFIG);
 
