@@ -1,5 +1,5 @@
 /*
- * @Description 
+ * @Description 入口文件
  * @Author Catbuli
  * @Date 2020-12-26 18:09:13
  * @LastEditors Catbuli
@@ -16,12 +16,21 @@ const deploy = require("./lib/deploy");
 const { msgSuccess, msgNormal, msgTitle, msgInfo } = require("./lib/consoleMsg");
 
 /**
- * @Description 主函数
+ * @Description 入口函数
  * @param {*}
  * @return {*}
  * @example 
  */
 async function start() {
+
+    msgInfo("         ___   ____   __          ____   ____ ");
+    msgInfo("        / __) (  _ \\ (  )   ___  (  _ \\ (_  _)");
+    msgInfo("       ( (__   ) _ <  )(__ (___)  )(_) )  )( ");
+    msgInfo(`        \\___) (____/ (____)      (____/  (_)    v${PACKAGE.version} by ${PACKAGE.author}`);
+    msgInfo("");
+
+    msgInfo(`${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`);
+    msgInfo("");
 
     let _CONFIG = await selectServer(handleConfig());
 

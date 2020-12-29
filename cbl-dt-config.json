@@ -8,7 +8,6 @@
         "password": "zhangyifei0918..",
         "build":"npm run build",
         "localDist":"./dist",
-        "targetDist":"/var/www/html/test",
-        "backup":true
+        "targetDist":"/var/www/html/test"
     }
 ]
