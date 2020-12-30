@@ -13,7 +13,7 @@ const handleConfig = require("./lib/handleConfig");
 const projectBuild = require("./lib/projectBuild");
 const PACKAGE = require("./package.json");
 const deploy = require("./lib/deploy");
-const { msgSuccess, msgNormal, msgTitle, msgInfo } = require("./lib/consoleMsg");
+const { msgInfo } = require("./lib/consoleMsg");
 
 /**
  * @Description 入口函数
