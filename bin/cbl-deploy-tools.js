@@ -10,11 +10,14 @@
 'use strict'
 
 const start = require("../index");
+const { msgInfo } = require("../lib/consoleMsg");
+const PACKAGE = require("../package.json");
 
 (function () {
+
     try {
         start();
     } catch (error) {
-        if (error) throw error;
+        console.log(error);
     }
 })();

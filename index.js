@@ -11,9 +11,9 @@
 const selectServer = require("./lib/selectServer");
 const handleConfig = require("./lib/handleConfig");
 const projectBuild = require("./lib/projectBuild");
-const PACKAGE = require("./package.json");
 const deploy = require("./lib/deploy");
 const { msgInfo } = require("./lib/consoleMsg");
+const PACKAGE = require("./package.json");
 
 /**
  * @Description 入口函数
@@ -26,7 +26,7 @@ async function start() {
     msgInfo("         ___   ____   __          ____   ____ ");
     msgInfo("        / __) (  _ \\ (  )   ___  (  _ \\ (_  _)");
     msgInfo("       ( (__   ) _ <  )(__ (___)  )(_) )  )( ");
-    msgInfo(`        \\___) (____/ (____)      (____/  (_)    v${PACKAGE.version} by_${PACKAGE.author}`);
+    msgInfo(`        \\___) (____/ (____)      (____/   (_)    v${PACKAGE.version} by_${PACKAGE.author}`);
     msgInfo("");
 
     msgInfo(`${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`);

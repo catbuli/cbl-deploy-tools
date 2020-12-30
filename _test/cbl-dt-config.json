@@ -1,13 +1,12 @@
 [
     {
         "name":"ciblog",
-        "type":"local",
-        "host": "47.106.90.253",
+        "host": "0.0.0.0",
         "port":"22",
         "username": "root",
         "password": "zhangyifei0918..",
-        "build":"npm run build",
-        "localDist":"./dist",
+        "build":"mkdir ./testDist",
+        "localDist":"./testDist",
         "targetDist":"/var/www/html/test"
     }
 ]
