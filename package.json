@@ -7,7 +7,7 @@
     "cbl-dt": "./bin/cbl-deploy-tools.js"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --no-cache",
     "build": "cross-env NODE_ENV=production webpack --config build/wepack.config.js"
   },
   "repository": {

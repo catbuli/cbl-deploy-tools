@@ -11,7 +11,7 @@
 const selectServer = require("./lib/selectServer");
 const handleConfig = require("./lib/handleConfig");
 const projectBuild = require("./lib/projectBuild");
-const deploy = require("./lib/deploy");
+const { deploy } = require("./lib/deploy");
 const { msgInfo } = require("./lib/consoleMsg");
 const PACKAGE = require("./package.json");
 
@@ -23,10 +23,14 @@ const PACKAGE = require("./package.json");
  */
 async function start() {
 
-    msgInfo("         ___   ____   __          ____   ____ ");
-    msgInfo("        / __) (  _ \\ (  )   ___  (  _ \\ (_  _)");
-    msgInfo("       ( (__   ) _ <  )(__ (___)  )(_) )  )( ");
-    msgInfo(`        \\___) (____/ (____)      (____/   (_)    v${PACKAGE.version} by_${PACKAGE.author}`);
+    msgInfo(" ________  ________  ___                     ________  _________   ");
+    msgInfo("|\\   ____\\|\\   __  \\|\\  \\                   |\\   ___ \\|\\___   ___\\ ");
+    msgInfo("\\ \\  \\___|\\ \\  \\|\\ /\\ \\  \\      ____________\\ \\  \\_|\\ \\|___ \\  \\_| ");
+    msgInfo(" \\ \\  \\    \\ \\   __  \\ \\  \\    |\\____________\\ \\  \\ \\\\ \\   \\ \\  \\  ");
+    msgInfo("  \\ \\  \\____\\ \\  \\|\\  \\ \\  \\___\\|____________|\\ \\  \\_\\\\ \\   \\ \\  \\ ");
+    msgInfo("   \\ \\_______\\ \\_______\\ \\_______\\             \\ \\_______\\   \\ \\__\\");
+    msgInfo(`    \\|_______|\\|_______|\\|_______|              \\|_______|    \\|__|   v${PACKAGE.version} by ${PACKAGE.author}`);
+    // msgInfo(`        \\___) (____/ (____)      (____/   (_)    v${PACKAGE.version} by_${PACKAGE.author}`);
     msgInfo("");
 
     msgInfo(`${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`);

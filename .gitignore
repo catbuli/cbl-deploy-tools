@@ -1,5 +1,7 @@
 .DS_Store
 /node_modules
+_testLocalDist
+_testTargetDist
 
 # Editor directories and files
 .idea
