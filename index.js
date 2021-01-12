@@ -30,7 +30,6 @@ async function start() {
     msgInfo("  \\ \\  \\____\\ \\  \\|\\  \\ \\  \\___\\|____________|\\ \\  \\_\\\\ \\   \\ \\  \\ ");
     msgInfo("   \\ \\_______\\ \\_______\\ \\_______\\             \\ \\_______\\   \\ \\__\\");
     msgInfo(`    \\|_______|\\|_______|\\|_______|              \\|_______|    \\|__|   v${PACKAGE.version} by ${PACKAGE.author}`);
-    // msgInfo(`        \\___) (____/ (____)      (____/   (_)    v${PACKAGE.version} by_${PACKAGE.author}`);
     msgInfo("");
 
     msgInfo(`${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`);
