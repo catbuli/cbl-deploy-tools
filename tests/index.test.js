@@ -28,10 +28,9 @@ const testConfig = [{
 }];
 
 const { handleConfig, selectServer, projectBuild } = require("./testFunction");
-const { resolvePath } = require("../lib/utils");
+const { resolvePath, commandSpawn } = require("../lib/utils");
 const { connectServer, sshCommand, targetDistBackup, upload } = require("../lib/deploy");
 const { NodeSSH } = require("node-ssh");
-const commandSpawn = require("../lib/commandSpawn");
 
 describe("======= cbl-deploy-tools test =======", () => {
     let _CONFIG;
