@@ -4,7 +4,7 @@
 
 ## 效果预览
 
-![预览](https://catbuli.oss-cn-beijing.aliyuncs.com/cbl-deploy-tools/cbl-deploy-tools-example.gif?Expires=1610532900&OSSAccessKeyId=TMP.3KdEMcVHQ6tS48g7nU6ptnDTNnDk2mKab2YzG5S6Lqd1sogyTBk4oVv9LvV3hRGNNAMdBBYk6nRoMWnBJjxAJ7TPbxmeZC&Signature=y66u45mptL7A%2FSuzluD2IUq7Je4%3D)
+![预览](https://raw.githubusercontent.com/catbuli/picture/master/cbl-deploy-tools/cbl-deploy-tools-example.gif)
 
 ## 安装
 
