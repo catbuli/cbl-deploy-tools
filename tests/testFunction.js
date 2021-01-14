@@ -9,8 +9,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const { msgError } = require('../lib/consoleMsg');
-const commandSpawn = require("../lib/commandSpawn");
-const { resolvePath } = require("../lib/utils");
+const { resolvePath, commandSpawn } = require("../lib/utils");
 
 function handleConfig(configPath) {
     if (!fs.existsSync(configPath)) {

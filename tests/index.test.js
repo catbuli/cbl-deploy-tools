@@ -28,7 +28,7 @@ const testConfig = [{
 }];
 
 const { handleConfig, selectServer, projectBuild } = require("./testFunction");
-const { resolvePath, commandSpawn } = require("../lib/utils");
+const { resolvePath, commandSpawn, handlePath } = require("../lib/utils");
 const { connectServer, sshCommand, targetDistBackup, upload } = require("../lib/deploy");
 const { NodeSSH } = require("node-ssh");
 
@@ -99,13 +99,15 @@ describe("======= cbl-deploy-tools test =======", () => {
     // })
 
     it('======= clear test file =======', async () => {
-        console.log(resolvePath("./", "./"), '')
-        await commandSpawn("rm", ["-rf", "_test*"], resolvePath("./", "./"));
-        // await commandSpawn("touch", ["aaa"], resolvePath("./", "./"));
+        await commandSpawn("rm", ["-rf", `${_CONFIG.localDist}`], resolvePath("./", "./"));
     })
 })
 
 describe("======= cbl-deploy-tools utils test =======", () => {
-
+    it('======= projectBuild test =======', async () => {
+        expect(handlePath("/var/www")).toEqual("/var/www/");
+        expect(handlePath("/var/www/")).toEqual("/var/www/");
+        expect(handlePath("/var/www//")).toEqual("/var/www//");
+    })
 })
 
