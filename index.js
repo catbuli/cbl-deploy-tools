@@ -14,7 +14,7 @@ const projectBuild = require("./lib/projectBuild");
 const { deploy } = require("./lib/deploy");
 const { msgInfo } = require("./lib/consoleMsg");
 const PACKAGE = require("./package.json");
-const { getDate } = require("./lib/utils");
+const { getDate, handlePath } = require("./lib/utils");
 
 /**
  * @Description 入口函数
@@ -40,7 +40,7 @@ async function start() {
     let _CONFIG = await selectServer(handleConfig());
 
     // 项目打包构建
-    await projectBuild(_CONFIG.build);
+    // await projectBuild(_CONFIG.build);
 
     // 项目部署
     await deploy(_CONFIG);
