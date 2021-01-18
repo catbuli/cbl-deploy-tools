@@ -14,7 +14,7 @@ const projectBuild = require("./lib/projectBuild");
 const { deploy } = require("./lib/deploy");
 const { msgInfo } = require("./lib/consoleMsg");
 const PACKAGE = require("./package.json");
-const { getDate, handlePath } = require("./lib/utils");
+const { getDate } = require("./lib/utils");
 
 /**
  * @Description 入口函数
