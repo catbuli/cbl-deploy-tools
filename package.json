@@ -1,6 +1,6 @@
 {
     "name": "cbl-deploy-tools",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "前端自动化部署工具",
     "main": "./index.js",
     "bin": {
