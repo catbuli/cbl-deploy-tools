@@ -30,7 +30,7 @@ async function start() {
     msgInfo(" \\ \\  \\    \\ \\   __  \\ \\  \\    |\\____________\\ \\  \\ \\\\ \\   \\ \\  \\  ");
     msgInfo("  \\ \\  \\____\\ \\  \\|\\  \\ \\  \\___\\|____________|\\ \\  \\_\\\\ \\   \\ \\  \\ ");
     msgInfo("   \\ \\_______\\ \\_______\\ \\_______\\             \\ \\_______\\   \\ \\__\\");
-    msgInfo(`    \\|_______|\\|_______|\\|_______|              \\|_______|    \\|__|   v${PACKAGE.version.toString()} by ${PACKAGE.author.toString()}`);
+    msgInfo(`    \\|_______|\\|_______|\\|_______|              \\|_______|    \\|__|   v${PACKAGE.version.toString()} by catbuli`);
     msgInfo("");
 
     msgInfo(`${getDate()}`);
