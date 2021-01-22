@@ -1,15 +1,21 @@
 # cbl-deploy-tools
 
-一个前端自动化部署工具，还在开发中
+一个前端自动化部署工具。
 
 ## 效果预览
 
+全手动
+
 ![预览](https://raw.githubusercontent.com/catbuli/picture/master/cbl-deploy-tools/cbl-deploy-tools-example.gif)
+
+全自动
+
+![预览](https://raw.githubusercontent.com/catbuli/picture/master/cbl-deploy-tools/cbl-deploy-tools-auto-example.gif)
 
 ## 安装
 
 ```shell
-npm i -g cbl-deploy-tools //还没发包 再等等
+npm i -g cbl-deploy-tools
 ```
 
 ## 执行
@@ -19,6 +25,10 @@ npm i -g cbl-deploy-tools //还没发包 再等等
 ```shell
 cbl-dt
 ```
+
+## 注意事项
+
+暂时没有防呆设计，建议生产环境前先进行测试。
 
 ## cbl-dt-config.json
 
@@ -30,6 +40,7 @@ cbl-dt
 - `build`: 打包命令
 - `localDist`: 打包文件路径
 - `targetDist`: 目标服务器部署路径
+- `auto`: [1|0]{2} 第一位:是否备份 第二位:是否覆盖
 
 ```json
 [
@@ -41,7 +52,8 @@ cbl-dt
         "password": "root",
         "build": "npm run build",
         "localDist": "./dist",
-        "targetDist": "/var/www/html/xxxx"
+        "targetDist": "/var/www/html/xxxx",
+        "auto":"11"
     }
 ]
 ```
