@@ -1,43 +1,42 @@
 {
-  "name": "cbl-deploy-tools",
-  "version": "0.1.0",
-  "description": "前端自动化部署工具",
-  "main": "./index.js",
-  "bin": {
-    "cbl-dt": "./bin/cbl-deploy-tools.js"
-  },
-  "scripts": {
-    "test": "jest --no-cache",
-    "build": "cross-env NODE_ENV=production webpack --config build/wepack.config.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/catbuli/cbl-deploy.git"
-  },
-  "keywords": [
-    "auto",
-    "deploy",
-    "front-end"
-  ],
-  "author": "catbuli",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/catbuli/cbl-deploy-tools/issues"
-  },
-  "homepage": "https://github.com/catbuli/cbl-deploy-tools#readme",
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-jest": "^26.6.3",
-    "babel-preset-env": "^1.7.0",
-    "cross-env": "^7.0.3",
-    "jest": "^26.6.3",
-    "regenerator-runtime": "^0.13.7"
-  },
-  "dependencies": {
-    "chalk": "^4.1.0",
-    "inquirer": "^7.3.3",
-    "node-ssh": "^11.1.1",
-    "ora": "^5.1.0",
-    "ssh2": "^0.8.9"
-  }
+    "name": "cbl-deploy-tools",
+    "version": "0.1.2",
+    "description": "前端自动化部署工具",
+    "main": "./index.js",
+    "bin": {
+        "cbl-dt": "./bin/cbl-deploy-tools.js"
+    },
+    "scripts": {
+        "test": "jest --no-cache",
+        "build": "cross-env NODE_ENV=production webpack --config build/wepack.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/catbuli/cbl-deploy.git"
+    },
+    "keywords": [
+        "auto",
+        "deploy",
+        "front-end"
+    ],
+    "author": "catbuli",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/catbuli/cbl-deploy-tools/issues"
+    },
+    "homepage": "https://github.com/catbuli/cbl-deploy-tools#readme",
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-jest": "^26.6.3",
+        "babel-preset-env": "^1.7.0",
+        "cross-env": "^7.0.3",
+        "jest": "^26.6.3",
+        "regenerator-runtime": "^0.13.7"
+    },
+    "dependencies": {
+        "chalk": "^4.1.0",
+        "inquirer": "^7.3.3",
+        "node-ssh": "^11.1.1",
+        "ora": "^5.1.0"
+    }
 }

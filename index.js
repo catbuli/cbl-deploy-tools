@@ -14,7 +14,7 @@ const projectBuild = require("./lib/projectBuild");
 const { deploy } = require("./lib/deploy");
 const { msgInfo } = require("./lib/consoleMsg");
 const PACKAGE = require("./package.json");
-const { getDate, handlePath } = require("./lib/utils");
+const { getDate } = require("./lib/utils");
 
 /**
  * @Description 入口函数
@@ -30,7 +30,7 @@ async function start() {
     msgInfo(" \\ \\  \\    \\ \\   __  \\ \\  \\    |\\____________\\ \\  \\ \\\\ \\   \\ \\  \\  ");
     msgInfo("  \\ \\  \\____\\ \\  \\|\\  \\ \\  \\___\\|____________|\\ \\  \\_\\\\ \\   \\ \\  \\ ");
     msgInfo("   \\ \\_______\\ \\_______\\ \\_______\\             \\ \\_______\\   \\ \\__\\");
-    msgInfo(`    \\|_______|\\|_______|\\|_______|              \\|_______|    \\|__|   v${PACKAGE.version} by ${PACKAGE.author}`);
+    msgInfo(`    \\|_______|\\|_______|\\|_______|              \\|_______|    \\|__|   v${PACKAGE.version.toString()} by catbuli`);
     msgInfo("");
 
     msgInfo(`${getDate()}`);
