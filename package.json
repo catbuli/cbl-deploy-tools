@@ -1,6 +1,6 @@
 {
     "name": "cbl-deploy-tools",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "前端自动化部署工具",
     "main": "./index.js",
     "bin": {
@@ -34,6 +34,7 @@
         "regenerator-runtime": "^0.13.7"
     },
     "dependencies": {
+        "adm-zip": "^0.5.1",
         "chalk": "^4.1.0",
         "inquirer": "^7.3.3",
         "node-ssh": "^11.1.1",
